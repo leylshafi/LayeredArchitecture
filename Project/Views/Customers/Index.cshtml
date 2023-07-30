@@ -1,0 +1,17 @@
+﻿@using DomainModelEntity;
+@model List<Customer>
+
+<div class="d-flex flex-wrap">
+	@foreach (var customer in Model)
+	{
+		<div class="card m-1" style="width: 18rem;">
+			<div class="card-body">
+				<h5 class="card-title">@customer.CompanyName</h5>
+				<p class="card-text">Contact Name: @customer.ContactName</p>
+				<p class="card-text">Address: @customer.Address</p>
+				<p class="card-text">City: @customer.City</p>
+				<p class="card-text">Country: @customer.Country</p>
+			</div>
+		</div>
+	}
+</div>
